@@ -6,24 +6,22 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXFileReference section */
-		57D5177727D0F9F400C8B39A /* libPlaydate_HelloWorld_Simulator.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPlaydate_HelloWorld_Simulator.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		57D5178027D0FAC400C8B39A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 57D5177F27D0FAC400C8B39A /* main.c */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		57D5177527D0F9F400C8B39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
+/* Begin PBXFileReference section */
+		57C30A0527DB8D640021C2EC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		57D5177727D0F9F400C8B39A /* libCrank.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCrank.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D5177F27D0FAC400C8B39A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		57D5176E27D0F9F400C8B39A = {
 			isa = PBXGroup;
 			children = (
+				57C30A0527DB8D640021C2EC /* README.md */,
+				57D5178127D0FB8B00C8B39A /* src */,
 				57D5177827D0F9F400C8B39A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -31,39 +29,36 @@
 		57D5177827D0F9F400C8B39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57D5177727D0F9F400C8B39A /* libPlaydate_HelloWorld_Simulator.dylib */,
+				57D5177727D0F9F400C8B39A /* libCrank.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		57D5178127D0FB8B00C8B39A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				57D5177F27D0FAC400C8B39A /* main.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		57D5177327D0F9F400C8B39A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		57D5177627D0F9F400C8B39A /* Playdate_HelloWorld_Simulator */ = {
+		57D5177627D0F9F400C8B39A /* Crank */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57D5177B27D0F9F400C8B39A /* Build configuration list for PBXNativeTarget "Playdate_HelloWorld_Simulator" */;
+			buildConfigurationList = 57D5177B27D0F9F400C8B39A /* Build configuration list for PBXNativeTarget "Crank" */;
 			buildPhases = (
-				57D5177327D0F9F400C8B39A /* Headers */,
 				57D5177427D0F9F400C8B39A /* Sources */,
-				57D5177527D0F9F400C8B39A /* Frameworks */,
+				57D5177E27D0FA1700C8B39A /* Compile PDX */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Playdate_HelloWorld_Simulator;
+			name = Crank;
 			productName = Playdate_HelloWorld_Simulator;
-			productReference = 57D5177727D0F9F400C8B39A /* libPlaydate_HelloWorld_Simulator.dylib */;
+			productReference = 57D5177727D0F9F400C8B39A /* libCrank.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -80,7 +75,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 57D5177227D0F9F400C8B39A /* Build configuration list for PBXProject "Playdate_HelloWorld_Simulator" */;
+			buildConfigurationList = 57D5177227D0F9F400C8B39A /* Build configuration list for PBXProject "Crank" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -93,16 +88,38 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57D5177627D0F9F400C8B39A /* Playdate_HelloWorld_Simulator */,
+				57D5177627D0F9F400C8B39A /* Crank */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57D5177E27D0FA1700C8B39A /* Compile PDX */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile PDX";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}\" Source/pdex.dylib\n        touch Source/pdex.bin\n        make pdc\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57D5177427D0F9F400C8B39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D5178027D0FAC400C8B39A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +245,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"TARGET_EXTENSION=1",
+					"PLAYDATE_SIMULATOR=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "/Users/jwamin/Developer/PlaydateSDK/C_API/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -241,6 +265,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "/Users/jwamin/Developer/PlaydateSDK/C_API/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -249,7 +274,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57D5177227D0F9F400C8B39A /* Build configuration list for PBXProject "Playdate_HelloWorld_Simulator" */ = {
+		57D5177227D0F9F400C8B39A /* Build configuration list for PBXProject "Crank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57D5177927D0F9F400C8B39A /* Debug */,
@@ -258,7 +283,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57D5177B27D0F9F400C8B39A /* Build configuration list for PBXNativeTarget "Playdate_HelloWorld_Simulator" */ = {
+		57D5177B27D0F9F400C8B39A /* Build configuration list for PBXNativeTarget "Crank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57D5177C27D0F9F400C8B39A /* Debug */,
