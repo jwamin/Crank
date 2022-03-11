@@ -154,26 +154,19 @@ static int update(void* userdata)
 //    }
     
     int endAngle = crankValue;
-    drawCount = 32 * (crankValue / 360);
+    drawCount = 32 - 32 * (crankValue / 360);
     
-    LCDPattern anotherColor;
-    LCDPattern testPattern;
+    LCDPattern colorPattern;
     LCDColor color;
-    *anotherColor = *ptr;
+    *colorPattern = *ptr;
     //{0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55,1,1,1,1,1,1,1,1};
     //LCDPattern myPattern = { 0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55 };
-    uint8_t pattern[8] = {0xaa, 0xaa, 0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55};
-    uint8_t alphaMax[8] = {0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55};
-    
-    int alphaIndex = 0;
+
     for (int i = 0; i < 16; i++) {
         if (i<8){
-            testPattern[i] = pattern[i];
-            anotherColor[i] = *(uint8_t *)&ptr[i];
+            colorPattern[i] = *(uint8_t *)&ptr[i];
         } else {
-            testPattern[i] = alphaMax[alphaIndex];
-            anotherColor[i] = alphaMax[alphaIndex];
-            alphaIndex++;
+            colorPattern[i] = 0x55;
         }
         
     }
@@ -187,10 +180,12 @@ static int update(void* userdata)
     unsigned int originX = (float)(LCD_COLUMNS / 2) - (float)(width / 2);
     unsigned int originY = (float)(LCD_ROWS / 2) - (float)(height / 2);
     
-    if (endAngle < 90) {
+    if (endAngle > 270) {
         color = kColorBlack;
+    } else if (endAngle < 90) {
+        color = kColorWhite;
     } else {
-        color = (LCDColor)anotherColor;
+        color = (LCDColor)colorPattern;
     }
     
     pd->graphics->fillEllipse(originX,originY,width,height,0,endAngle,color);
