@@ -1,5 +1,7 @@
 # Crank
 
+![Set](pd-test.png?raw=true "Screenshot")
+
 ## Playdate "Hello world" application in C, with Crank and button action.
 
 ### Features 
@@ -13,4 +15,4 @@
 
 * Fix up header search paths to point to playdate SDK
 * Fix scheme path to point to Playdate emulator
-* more info on [Playdate with C](https://sdk.play.date/inside-playdate-with-c)
+* More info on [Playdate with C](https://sdk.play.date/inside-playdate-with-c)

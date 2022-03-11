@@ -12,6 +12,7 @@
 
 /* Begin PBXFileReference section */
 		57C30A0527DB8D640021C2EC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		57C30A0627DB8F330021C2EC /* pd-test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pd-test.png"; sourceTree = "<group>"; };
 		57D5177727D0F9F400C8B39A /* libCrank.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCrank.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D5177F27D0FAC400C8B39A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -20,6 +21,7 @@
 		57D5176E27D0F9F400C8B39A = {
 			isa = PBXGroup;
 			children = (
+				57C30A0627DB8F330021C2EC /* pd-test.png */,
 				57C30A0527DB8D640021C2EC /* README.md */,
 				57D5178127D0FB8B00C8B39A /* src */,
 				57D5177827D0F9F400C8B39A /* Products */,
