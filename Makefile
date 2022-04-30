@@ -1,7 +1,7 @@
 HEAP_SIZE      = 8388208
 STACK_SIZE     = 61800
 
-PRODUCT = HelloWorld.pdx
+PRODUCT = Crank.pdx
 
 # Locate the SDK
 SDK = ${PLAYDATE_SDK_PATH}
@@ -24,16 +24,16 @@ VPATH += src
 SRC = src/main.c
 
 # List all user directories here
-UINCDIR = 
+UINCDIR =
 
 # List user asm files
-UASRC = 
+UASRC =
 
 # List all user C define here, like -D_DEBUG=1
-UDEFS = 
+UDEFS =
 
 # Define ASM defines here
-UADEFS = 
+UADEFS =
 
 # List the user directory to look for the libraries here
 ULIBDIR =
@@ -42,4 +42,3 @@ ULIBDIR =
 ULIBS =
 
 include $(SDK)/C_API/buildsupport/common.mk
-

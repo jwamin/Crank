@@ -1,0 +1,3 @@
+/Users/jwamin/Developer/github/playdate/Crank/build/CMakeFiles/crank.dir
+/Users/jwamin/Developer/github/playdate/Crank/build/CMakeFiles/ALL_BUILD.dir
+/Users/jwamin/Developer/github/playdate/Crank/build/CMakeFiles/ZERO_CHECK.dir

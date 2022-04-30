@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in crank, no dependencies
+crank in crank, depends on:
+ZERO_CHECK in crank (explicit)
+ALL_BUILD in crank, depends on:
+crank in crank (explicit)
+ZERO_CHECK in crank (explicit)

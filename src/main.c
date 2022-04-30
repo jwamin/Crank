@@ -2,8 +2,8 @@
 //  main.c
 //  Extension
 //
-//  Created by Dave Hayden on 7/30/14.
-//  Copyright (c) 2014 Panic, Inc. All rights reserved.
+//  Created by Joss Manger on 7/30/14.
+//  Copyright (c) 2014 Jossy, Inc. All rights reserved.
 //
 
 #include <stdio.h>
@@ -67,7 +67,7 @@ int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
 	{
         case kEventInit:
             font = pd->graphics->loadFont(fontpath, &err);
-            
+
             if ( font == NULL )
                 pd->system->error("%s:%i Couldn't load font %s: %s", __FILE__, __LINE__, fontpath, err);
 
@@ -79,12 +79,12 @@ int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
             pd->system->logToConsole("Button down! %d %d %d\n",event, pushed, arg);
             break;
         case kEventKeyReleased:
-            
+
             break;
         default:
             break;
     }
-	
+
 	return 0;
 }
 
@@ -105,9 +105,9 @@ static int update(void* userdata)
 {
 	PlaydateAPI* pd = userdata;
     PDButtons current, pushed, released;
-    
+
     float crankValue = pd->system->getCrankAngle();
-    
+
     pd->system->getButtonState(&current, &pushed, &released);
     if (pushed || released){
         char buffer[33];
@@ -120,30 +120,30 @@ static int update(void* userdata)
             pressing = 0;
         }
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     if ((pushed & kButtonB) == kButtonB) {
         pd->system->logToConsole("b button pushed");
     }
-    
+
     if ((pushed & kButtonA) == kButtonA) {
         pd->system->logToConsole("a button pushed");
     }
-    
+
     if ((released & kButtonA) == kButtonA) {
         pd->system->logToConsole("a button released");
     }
-    
+
     if ((released & kButtonB) == kButtonB) {
         pd->system->logToConsole("b button released");
     }
-    
-    
+
+
     uint8_t *ptr = (uint8_t*)&patterns[drawCount];
-    
+
 //    int endAngle = 360;
 //    if (drawCount < DRAW_MAX) {
 //        endAngle = (unsigned int)(float)(360 * ((float)drawCount / DRAW_MAX));
@@ -152,10 +152,10 @@ static int update(void* userdata)
 //        drawCount = 0;
 //        endAngle = 0;
 //    }
-    
+
     int endAngle = crankValue;
-    drawCount = 32 - 32 * (crankValue / 360);
-    
+    drawCount = 32 - (32 * (crankValue / 360));
+
     LCDPattern colorPattern;
     LCDColor color;
     *colorPattern = *ptr;
@@ -168,18 +168,18 @@ static int update(void* userdata)
         } else {
             colorPattern[i] = 0x55;
         }
-        
+
     }
-    
+
     pd->graphics->clear(kColorWhite);
-	
+
     //pd->graphics->fillRect(0,0,LCD_COLUMNS,LCD_ROWS,(LCDColor)*color);
     unsigned int width = LCD_COLUMNS - 50;
     unsigned int height = width * 0.5;
-    
+
     unsigned int originX = (float)(LCD_COLUMNS / 2) - (float)(width / 2);
     unsigned int originY = (float)(LCD_ROWS / 2) - (float)(height / 2);
-    
+
     if (endAngle > 270) {
         color = kColorBlack;
     } else if (endAngle < 90) {
@@ -187,29 +187,28 @@ static int update(void* userdata)
     } else {
         color = (LCDColor)colorPattern;
     }
-    
+
     pd->graphics->fillEllipse(originX,originY,width,height,0,endAngle,color);
     pd->graphics->drawEllipse(originX,originY,width,height,3,0,endAngle,kColorBlack);
-    
+
 	pd->graphics->setFont(font);
     const char* hello = "Hello Jossy!";
 	pd->graphics->drawText(hello, strlen(hello), kASCIIEncoding, x, y);
 
 	x += dx;
 	y += dy;
-	
+
 	if ( x < 0 || x > LCD_COLUMNS - TEXT_WIDTH )
 		dx = -dx;
-	
+
 	if ( y < 0 || y > LCD_ROWS - TEXT_HEIGHT )
 		dy = -dy;
-        
+
 	pd->system->drawFPS(0,0);
 
     if (pressing) {
         pd->graphics->clear(kColorXOR);
     }
-    
+
 	return 1;
 }
-
