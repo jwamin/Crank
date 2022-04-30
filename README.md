@@ -11,8 +11,22 @@
 * logging
  
 
-### Notes
+### Instructions
 
-* Fix up header search paths to point to playdate SDK
-* Fix scheme path to point to Playdate emulator
-* More info on [Playdate with C](https://sdk.play.date/inside-playdate-with-c)
+https://sdk.play.date/1.10.0/Inside%20Playdate%20with%20C.html#_xcodemake
+
+#### Debug
+
+```
+mkdir build
+cd build
+cmake .. -G "Xcode"
+```
+
+#### Release 
+
+```
+cd release
+cmake -DCMAKE_TOOLCHAIN_FILE=<path to SDK>/C_API/buildsupport/arm.cmake ..
+make
+```
