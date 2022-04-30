@@ -3,3 +3,4 @@
 *.pdx
 release/
 build/Debug/
+**/xcuserdata/
