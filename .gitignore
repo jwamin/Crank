@@ -1,5 +1,10 @@
-.nove
+.nova
 .DS_Store
 *.pdx
+*.bin
 release/
 build/Debug/
+xcuserdata/
+xcshareddata/
+*.dSYM/
+*.dylib

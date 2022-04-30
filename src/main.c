@@ -153,7 +153,8 @@ static int update(void* userdata)
 //        endAngle = 0;
 //    }
 
-    int endAngle = crankValue;
+    int endAngle = (crankValue > 0) ? crankValue : 1;
+    
     drawCount = 32 - (32 * (crankValue / 360));
 
     LCDPattern colorPattern;
