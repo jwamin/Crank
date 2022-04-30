@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		56DD6BCB7B9E468EA3B0B7BD /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AB0FC518697A4C79AEACEDE2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				00BF76E864D3597C6345D48F /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		CCE097EF7AAC4349AB10DCF1 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6754245A0222414C87E5322D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				884DC11E50B0C7A9268ECEB8 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				95EB0F8734964F81BF42A63A /* PBXTargetDependency */,
+				4B9C8843C4104B86A19A7C00 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		57523FBACD0D4430A9BB01D2 /* /Users/jwamin/Developer/github/playdate/Crank/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 31F856333ABA42F9914857F0 /* /Users/jwamin/Developer/github/playdate/Crank/CMakeLists.txt */; };
+		597D1157AAE74D3E8706453D /* /Users/jwamin/Developer/github/playdate/Crank/src/main.c */ = {isa = PBXBuildFile; fileRef = 2ADBE40648594F55B9A6D9DB /* /Users/jwamin/Developer/github/playdate/Crank/src/main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3031BDF6BCA04AEAA300928D /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		441296760B744C0C9E4402CD /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1C39162378864D609E7F5854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C7A735E1C34B6F8E6A760A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DD6BCB7B9E468EA3B0B7BD;
+			remoteInfo = ZERO_CHECK;
+		};
+		41E730D94D12446BBED96D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C7A735E1C34B6F8E6A760A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DD6BCB7B9E468EA3B0B7BD;
+			remoteInfo = ZERO_CHECK;
+		};
+		8C9A285435DA4DB0B6E3A61C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C7A735E1C34B6F8E6A760A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CB34FB89B6E456D9D19A797;
+			remoteInfo = crank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ADBE40648594F55B9A6D9DB /* /Users/jwamin/Developer/github/playdate/Crank/src/main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = main.c; path = src/main.c; sourceTree = SOURCE_ROOT; };
+		31F856333ABA42F9914857F0 /* /Users/jwamin/Developer/github/playdate/Crank/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B9228E4633E240118CD001CC /* crank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libcrank.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4183A3E00944AD088529308 /* /Users/jwamin/Developer/github/playdate/Crank/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D3E01A63D854D2DBF6094BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36554012792B46D894D4382C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4786232C9E07483BB9A95F96 /* CMake Rules */,
+				F4183A3E00944AD088529308 /* /Users/jwamin/Developer/github/playdate/Crank/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		4786232C9E07483BB9A95F96 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		757ECCD8366947F492A392FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9228E4633E240118CD001CC /* crank */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA98F02DD79D4C02BDA9820D /* crank */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6C375CE3442D28499D7EE /* Source Files */,
+				31F856333ABA42F9914857F0 /* /Users/jwamin/Developer/github/playdate/Crank/CMakeLists.txt */,
+			);
+			name = crank;
+			sourceTree = "<group>";
+		};
+		D2A6C375CE3442D28499D7EE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBE40648594F55B9A6D9DB /* /Users/jwamin/Developer/github/playdate/Crank/src/main.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DAE4B01FF5234A34951502A3 = {
+			isa = PBXGroup;
+			children = (
+				CA98F02DD79D4C02BDA9820D /* crank */,
+				36554012792B46D894D4382C /* ALL_BUILD */,
+				757ECCD8366947F492A392FE /* Products */,
+				FC35B0C2513D44E79F9E3739 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC35B0C2513D44E79F9E3739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CB34FB89B6E456D9D19A797 /* crank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E5701E30E6043C99B8B704A /* Build configuration list for PBXNativeTarget "crank" */;
+			buildPhases = (
+				8CF36C302DC44FD8AA295C23 /* Sources */,
+				1D3E01A63D854D2DBF6094BC /* Frameworks */,
+				7FA65BE8549E881AC2095451 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94FB28D1E272404BA7C4EE80 /* PBXTargetDependency */,
+			);
+			name = crank;
+			productName = crank;
+			productReference = B9228E4633E240118CD001CC /* crank */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6C7A735E1C34B6F8E6A760A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1330;
+			};
+			buildConfigurationList = A0FA73A204C549A0881261A0 /* Build configuration list for PBXProject "crank" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				441296760B744C0C9E4402CD /* Debug */,
+				3031BDF6BCA04AEAA300928D /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = DAE4B01FF5234A34951502A3;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				CCE097EF7AAC4349AB10DCF1 /* ALL_BUILD */,
+				56DD6BCB7B9E468EA3B0B7BD /* ZERO_CHECK */,
+				1CB34FB89B6E456D9D19A797 /* crank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00BF76E864D3597C6345D48F /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/jwamin/Developer/github/playdate/Crank/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  make -f /Users/jwamin/Developer/github/playdate/Crank/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  make -f /Users/jwamin/Developer/github/playdate/Crank/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7FA65BE8549E881AC2095451 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /usr/local/Cellar/cmake/3.22.1/bin/cmake -E copy /Users/jwamin/Developer/github/playdate/Crank/build/Debug/libcrank.dylib /Users/jwamin/Developer/github/playdate/Crank/Source/pdex.dylib
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /usr/local/Cellar/cmake/3.22.1/bin/cmake -E touch /Users/jwamin/Developer/github/playdate/Crank/Source/pdex.bin
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /Users/jwamin/Developer/PlaydateSDK/bin/pdc -sdkpath /Users/jwamin/Developer/PlaydateSDK /Users/jwamin/Developer/github/playdate/Crank/Source /Users/jwamin/Developer/github/playdate/Crank/crank.pdx
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /usr/local/Cellar/cmake/3.22.1/bin/cmake -E cmake_symlink_library /Users/jwamin/Developer/github/playdate/Crank/build/Debug/libcrank.dylib /Users/jwamin/Developer/github/playdate/Crank/build/Debug/libcrank.dylib /Users/jwamin/Developer/github/playdate/Crank/build/Debug/libcrank.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /usr/local/Cellar/cmake/3.22.1/bin/cmake -E copy /Users/jwamin/Developer/github/playdate/Crank/build/Release/libcrank.dylib /Users/jwamin/Developer/github/playdate/Crank/Source/pdex.dylib
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /usr/local/Cellar/cmake/3.22.1/bin/cmake -E touch /Users/jwamin/Developer/github/playdate/Crank/Source/pdex.bin
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /Users/jwamin/Developer/PlaydateSDK/bin/pdc -sdkpath /Users/jwamin/Developer/PlaydateSDK /Users/jwamin/Developer/github/playdate/Crank/Source /Users/jwamin/Developer/github/playdate/Crank/crank.pdx
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  /usr/local/Cellar/cmake/3.22.1/bin/cmake -E cmake_symlink_library /Users/jwamin/Developer/github/playdate/Crank/build/Release/libcrank.dylib /Users/jwamin/Developer/github/playdate/Crank/build/Release/libcrank.dylib /Users/jwamin/Developer/github/playdate/Crank/build/Release/libcrank.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		884DC11E50B0C7A9268ECEB8 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/jwamin/Developer/github/playdate/Crank/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jwamin/Developer/github/playdate/Crank/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF36C302DC44FD8AA295C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597D1157AAE74D3E8706453D /* /Users/jwamin/Developer/github/playdate/Crank/src/main.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B9C8843C4104B86A19A7C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56DD6BCB7B9E468EA3B0B7BD /* ZERO_CHECK */;
+			targetProxy = 41E730D94D12446BBED96D60 /* PBXContainerItemProxy */;
+		};
+		94FB28D1E272404BA7C4EE80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56DD6BCB7B9E468EA3B0B7BD /* ZERO_CHECK */;
+			targetProxy = 1C39162378864D609E7F5854 /* PBXContainerItemProxy */;
+		};
+		95EB0F8734964F81BF42A63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CB34FB89B6E456D9D19A797 /* crank */;
+			targetProxy = 8C9A285435DA4DB0B6E3A61C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		142D4E7D3E1940E59C7C25BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build/build;
+			};
+			name = Debug;
+		};
+		2A09725CA30B4917962FEAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3CDFEC81136D4F9D947DA9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",crank_EXPORTS,"'TARGET_SIMULATOR=1'","'TARGET_EXTENSION=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jwamin/Developer/PlaydateSDK/C_API,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall -Wstrict-prototypes -Wno-unknown-pragmas '-std=gnu11' ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = crank;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5A3E9249EC284DAD8680946C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build/build;
+			};
+			name = Release;
+		};
+		9894DB3605734DBD9E692874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A31CB32B444F4E92904CB31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CD6BB45FB97C46938F860E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E283DBCF91CD4686BF1B2932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",crank_EXPORTS,"'TARGET_SIMULATOR=1'","'TARGET_EXTENSION=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jwamin/Developer/PlaydateSDK/C_API,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = ("   -fPIC -Wall -Wstrict-prototypes -Wno-unknown-pragmas           '-std=gnu11' ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = crank;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jwamin/Developer/github/playdate/Crank/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E5701E30E6043C99B8B704A /* Build configuration list for PBXNativeTarget "crank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E283DBCF91CD4686BF1B2932 /* Debug */,
+				3CDFEC81136D4F9D947DA9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6754245A0222414C87E5322D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9894DB3605734DBD9E692874 /* Debug */,
+				A31CB32B444F4E92904CB31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A0FA73A204C549A0881261A0 /* Build configuration list for PBXProject "crank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142D4E7D3E1940E59C7C25BE /* Debug */,
+				5A3E9249EC284DAD8680946C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB0FC518697A4C79AEACEDE2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A09725CA30B4917962FEAC5 /* Debug */,
+				CD6BB45FB97C46938F860E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6C7A735E1C34B6F8E6A760A /* Project object */;
+}

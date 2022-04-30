@@ -1,0 +1,64 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "8f4f33c739cee5afb4717a452c815fcc0b056b514c4ebd8c1c98804fdba680f5"
+    },
+    {
+      "guid" : "8f4f33c739cee5afb4717a452c815fcce4e79863c216ba21985adb33bbcdfee1"
+    },
+    {
+      "guid" : "8f4f33c739cee5afb4717a452c815fcc3dce905d969c5be2bf63ca89ce8324d3"
+    }
+  ],
+  "containerPath" : "/Users/jwamin/Developer/github/playdate/Crank/build/crank.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/jwamin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/jwamin/Library/Developer/Xcode/DerivedData/crank-coresglmjeqdzzfnvazmeuctgjoq/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jwamin/Library/Developer/Xcode/DerivedData/crank-coresglmjeqdzzfnvazmeuctgjoq/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
